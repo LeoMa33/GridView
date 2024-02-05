@@ -18,11 +18,11 @@
 
 ## 📋 Description
 
-Ce projet a pour but de partager une solution de GridView pouvant afficher différent modèles de View sous la forme d'une grille.
+Ce projet a pour but de partager une solution de GridView pouvant afficher différents modèles de View sous la forme d'une grille.
 
 ## 🌟 Fonctionalités
 
-- Créer des Views personnalisé.
+- Créer des Views personnalisées.
 
 - Fournir une liste de "View" à organiser en grille.
 
@@ -64,8 +64,8 @@ public partial class ExempleItemView : ViewCell
 
 ### Créer un item :
 
-Cette class contiendra les propriétés des items que l'on souhaite afficher.
-Elle hérite de la class [```GridViewItem```](#gridviewitem) qui contiens les méthodes nécessaires pour l'affichage des Views dans la GridView.
+Cette classe contiendra les propriétés des items que l'on souhaite afficher.
+Elle hérite de la classe [```GridViewItem```](#gridviewitem) qui contiens les méthodes nécessaires pour l'affichage des Views dans la GridView.
 
 ```c#
 public class ExempleItem : GridViewItem
@@ -86,7 +86,7 @@ public class ExempleItem : GridViewItem
 
 ### Créer la GridView :
 
-Après avoir créer les différents templates que vous souhaitez afficher :
+Après avoir créé les différents templates que vous souhaitez afficher :
 - Instanciez une nouvelle [```GridView```](#gridview) en lui précisant le nombre de lignes 
 maximum ou bien le nombre de colonnes maximum.
 ```c#
@@ -121,8 +121,7 @@ Votre GridView devrez maintenant s'afficher sur votre page.
 
 ### GridView
 ----
-Cette class contient toutes les méthodes nécessaire à l'affichage et à la gestion des idées à afficher.
-Elle doit être appelé en tant que class mère de chacune des class des items que vous souhaitez afficher.
+Cette classe contient toutes les propriétés permettant la gestion de l'affichage de la grille.
 
 <br>
 
@@ -136,8 +135,8 @@ Elle doit être appelé en tant que class mère de chacune des class des items q
 
 ### GridViewItem
 ----
-Cette class contient toutes les méthodes nécessaire à l'affichage et à la gestion des idées à afficher.
-Elle doit être appelé en tant que class mère de chacune des class des items que vous souhaitez afficher.
+Cette classe contient toutes les méthodes nécessaire à l'affichage et à la gestion des idées à afficher.
+Elle doit être appelée en tant que classe mère de chacune des classes des items que vous souhaitez afficher.
 
 <br>
 
