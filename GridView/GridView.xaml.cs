@@ -48,7 +48,7 @@ namespace GridView
 
         }
 
-        public void AddChildren(List<GridViewItem> listItems)
+        private void AddChildren(List<GridViewItem> listItems)
         {
             for (int index = 0; index < listItems.Count(); index++)
             {
