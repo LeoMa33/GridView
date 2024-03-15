@@ -12,7 +12,7 @@ namespace GridView
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GridView : StackLayout
     {
-        public new enum Orientation
+        public new enum _Orientation
         {
             Horizontal,
             Vertical
@@ -42,9 +42,9 @@ namespace GridView
             InitializeComponent();
 
 
-            if (maxRow != null) InitView(Orientation.Horizontal, (int)maxRow);
+            if (maxRow != null) InitView(_Orientation.Horizontal, (int)maxRow);
             
-            if (maxColumn != null) InitView(Orientation.Vertical, (int)maxColumn);
+            if (maxColumn != null) InitView(_Orientation.Vertical, (int)maxColumn);
 
         }
 
@@ -58,11 +58,12 @@ namespace GridView
             }
         }
 
-        private void InitView(Orientation orientation, int n)
+        private void InitView(_Orientation orientation, int n)
         {
             switch (orientation)
             {
-                case Orientation.Horizontal:
+                case _Orientation.Horizontal:
+                    this.Orientation = StackOrientation.Vertical;
                     for (int _ = 0; _ < n; _++)
                     {
                         this.Children.Add(new StackLayout
@@ -71,7 +72,8 @@ namespace GridView
                         });
                     }
                     break;
-                case Orientation.Vertical:
+                case _Orientation.Vertical:
+                    this.Orientation = StackOrientation.Horizontal;
                     for (int _ = 0; _ < n; _++)
                     {
                         this.Children.Add(new StackLayout
